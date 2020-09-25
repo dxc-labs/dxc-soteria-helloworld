@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Soteria helloworld component
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  Topic:
+    Type: AWS::SNS::Topic
+
+  # HelloWorld:
+  #   Type: AWS::Serverless::Function
+  #   Properties:
+  #     Handler: helloworld.handler
+  #     CodeUri: ./lambda-functions/lambda_function.js
+  #     AutoPublishAlias: live
+
+  # HelloWorldPython:
+  #   Type: AWS::Serverless::Function
+  #   Properties:
+  #     Handler: helloworld.handler
+  #     CodeUri: ../packages/hello-world-python/lambda_function.py
+  #     AutoPublishAlias: live
